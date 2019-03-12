@@ -1,0 +1,14 @@
+H1 {
+  text-align: center
+}
+mat-selection-list {
+  text-align: left
+}
+
+.contenedor {
+  /* text-align: center; */
+  /* width : ; */
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+}

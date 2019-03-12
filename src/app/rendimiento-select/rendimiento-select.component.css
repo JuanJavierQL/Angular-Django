@@ -1,0 +1,11 @@
+H1 {
+  text-align: center
+}
+
+.contenedor {
+  /* text-align: center; */
+  /* width : ; */
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
+}

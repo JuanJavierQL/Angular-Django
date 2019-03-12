@@ -1,0 +1,13 @@
+<div class="contenedor">
+  <h1> Generar Reportes de Rendimiento</h1>
+
+  <mat-selection-list [(ngModel)]="selectedOptions" >
+    <mat-list-option *ngFor="let rpt of reportes" [value]="rpt.value">
+      {{rpt.name}}
+    </mat-list-option>
+  </mat-selection-list>
+
+  <br>
+  <button mat-flat-button color="primary" (click)="print()">Generar Reportes</button>
+
+</div>

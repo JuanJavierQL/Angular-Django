@@ -1,0 +1,43 @@
+<div class="contenedor">
+  <h1> Generar Reportes de Rendimiento</h1>
+  <!-- <mat-form-field>
+    <mat-select placeholder="Reportes" ([formControl])="toppings" multiple>
+      <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+    </mat-select>
+  </mat-form-field> -->
+
+  <mat-form-field>
+    <mat-select placeholder="Reportes" [(ngModel)]="selected" multiple name="selectReportes">
+      <mat-optgroup label="Clases">
+        <mat-option value="1">Rendimiento Clases Regular</mat-option>
+        <mat-option value="2">Rendimiento Clases Tesis</mat-option>
+        <mat-option value="3">Rendimiento Clases Consolidado</mat-option>
+      </mat-optgroup>
+      <mat-optgroup label="Docente">
+        <mat-option value="4">Rendimiento Docente Regular</mat-option>
+        <mat-option value="5">Rendimiento Docente Tesis</mat-option>
+        <mat-option value="6">Rendimiento Docente Consolidado</mat-option>
+      </mat-optgroup>
+      <mat-optgroup label="Resumen">
+        <mat-option value="7">Rendimiento Resumen </mat-option>
+        <mat-option value="8">Rendimiento Resumen Consolidado</mat-option>
+      </mat-optgroup>
+    </mat-select>
+  </mat-form-field>
+  <br>
+
+  <!-- <mat-form-field>
+    <mat-select placeholder="Reportes" [(value)]="selected" multiple>
+      <mat-option *ngFor="let rep of reportes" [value]="reportes.value">
+        {{rep.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field> 
+  <p>You selected: {{selected}}</p> -->
+
+
+  <button mat-flat-button color="primary" (click)="print()">Generar Reportes</button>
+
+
+
+</div>
